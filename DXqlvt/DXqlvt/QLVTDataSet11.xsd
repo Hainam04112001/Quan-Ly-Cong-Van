@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLVTDataSet11" targetNamespace="http://tempuri.org/QLVTDataSet11.xsd" xmlns:mstns="http://tempuri.org/QLVTDataSet11.xsd" xmlns="http://tempuri.org/QLVTDataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLVTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLVTConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DXqlvt.Properties.Settings.GlobalReference.Default.QLVTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_8TableAdapter" GeneratorDataComponentClassName="View_8TableAdapter" Name="View_8" UserDataComponentName="View_8TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLVTConnectionString (Settings)" DbObjectName="QLVT.dbo.View_8" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, Kihieu, TenLVB, Linhvuc, Sotrang, Soban, Filetaptin, NoidungVB, Trichyeu, Ngaytao, TenVB, Noinhan FROM dbo.View_8</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="Kihieu" DataSetColumn="Kihieu" />
+              <Mapping SourceColumn="TenLVB" DataSetColumn="TenLVB" />
+              <Mapping SourceColumn="Linhvuc" DataSetColumn="Linhvuc" />
+              <Mapping SourceColumn="Sotrang" DataSetColumn="Sotrang" />
+              <Mapping SourceColumn="Soban" DataSetColumn="Soban" />
+              <Mapping SourceColumn="Filetaptin" DataSetColumn="Filetaptin" />
+              <Mapping SourceColumn="NoidungVB" DataSetColumn="NoidungVB" />
+              <Mapping SourceColumn="Trichyeu" DataSetColumn="Trichyeu" />
+              <Mapping SourceColumn="Ngaytao" DataSetColumn="Ngaytao" />
+              <Mapping SourceColumn="TenVB" DataSetColumn="TenVB" />
+              <Mapping SourceColumn="Noinhan" DataSetColumn="Noinhan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLVTDataSet11" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLVTDataSet11" msprop:Generator_UserDSName="QLVTDataSet11">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_8" msprop:Generator_TableClassName="View_8DataTable" msprop:Generator_TableVarName="tableView_8" msprop:Generator_TablePropName="View_8" msprop:Generator_RowDeletingName="View_8RowDeleting" msprop:Generator_RowChangingName="View_8RowChanging" msprop:Generator_RowEvHandlerName="View_8RowChangeEventHandler" msprop:Generator_RowDeletedName="View_8RowDeleted" msprop:Generator_UserTableName="View_8" msprop:Generator_RowChangedName="View_8RowChanged" msprop:Generator_RowEvArgName="View_8RowChangeEvent" msprop:Generator_RowClassName="View_8Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="Kihieu" msprop:Generator_ColumnVarNameInTable="columnKihieu" msprop:Generator_ColumnPropNameInRow="Kihieu" msprop:Generator_ColumnPropNameInTable="KihieuColumn" msprop:Generator_UserColumnName="Kihieu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenLVB" msprop:Generator_ColumnVarNameInTable="columnTenLVB" msprop:Generator_ColumnPropNameInRow="TenLVB" msprop:Generator_ColumnPropNameInTable="TenLVBColumn" msprop:Generator_UserColumnName="TenLVB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Linhvuc" msprop:Generator_ColumnVarNameInTable="columnLinhvuc" msprop:Generator_ColumnPropNameInRow="Linhvuc" msprop:Generator_ColumnPropNameInTable="LinhvucColumn" msprop:Generator_UserColumnName="Linhvuc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sotrang" msprop:Generator_ColumnVarNameInTable="columnSotrang" msprop:Generator_ColumnPropNameInRow="Sotrang" msprop:Generator_ColumnPropNameInTable="SotrangColumn" msprop:Generator_UserColumnName="Sotrang" type="xs:int" />
+              <xs:element name="Soban" msprop:Generator_ColumnVarNameInTable="columnSoban" msprop:Generator_ColumnPropNameInRow="Soban" msprop:Generator_ColumnPropNameInTable="SobanColumn" msprop:Generator_UserColumnName="Soban" type="xs:int" />
+              <xs:element name="Filetaptin" msprop:Generator_ColumnVarNameInTable="columnFiletaptin" msprop:Generator_ColumnPropNameInRow="Filetaptin" msprop:Generator_ColumnPropNameInTable="FiletaptinColumn" msprop:Generator_UserColumnName="Filetaptin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoidungVB" msprop:Generator_ColumnVarNameInTable="columnNoidungVB" msprop:Generator_ColumnPropNameInRow="NoidungVB" msprop:Generator_ColumnPropNameInTable="NoidungVBColumn" msprop:Generator_UserColumnName="NoidungVB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Trichyeu" msprop:Generator_ColumnVarNameInTable="columnTrichyeu" msprop:Generator_ColumnPropNameInRow="Trichyeu" msprop:Generator_ColumnPropNameInTable="TrichyeuColumn" msprop:Generator_UserColumnName="Trichyeu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ngaytao" msprop:Generator_ColumnVarNameInTable="columnNgaytao" msprop:Generator_ColumnPropNameInRow="Ngaytao" msprop:Generator_ColumnPropNameInTable="NgaytaoColumn" msprop:Generator_UserColumnName="Ngaytao" type="xs:dateTime" />
+              <xs:element name="TenVB" msprop:Generator_ColumnVarNameInTable="columnTenVB" msprop:Generator_ColumnPropNameInRow="TenVB" msprop:Generator_ColumnPropNameInTable="TenVBColumn" msprop:Generator_UserColumnName="TenVB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Noinhan" msprop:Generator_ColumnVarNameInTable="columnNoinhan" msprop:Generator_ColumnPropNameInRow="Noinhan" msprop:Generator_ColumnPropNameInTable="NoinhanColumn" msprop:Generator_UserColumnName="Noinhan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_8" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

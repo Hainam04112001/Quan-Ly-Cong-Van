@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Thongtinvanbandi">
+  <DataContextMoniker Name="/ThongtinvanbandiDataContext" />
+  <nestedChildShapes>
+    <classShape Id="57953d70-8ac0-4f8a-a9ce-ae152fdf0e87" absoluteBounds="4.625, 1.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/ThongtinvanbandiDataContext/View_2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90138e46-668f-4395-ae2c-85f537bc59f0" absoluteBounds="4.64, 2.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

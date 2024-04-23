@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Thongtinnoibanhanh">
+  <DataContextMoniker Name="/ThongtinnoibanhanhDataContext" />
+  <nestedChildShapes>
+    <classShape Id="31867f16-1bb2-4f15-baee-02b355c32bc2" absoluteBounds="2.375, 1.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ThongtinnoibanhanhDataContext/noibanhanh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d359525-6b11-4837-997b-61bd558e7b1b" absoluteBounds="2.39, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

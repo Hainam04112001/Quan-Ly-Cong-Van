@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{257ADE68-0218-41DB-A834-D8E745F8270B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXqlvt</RootNamespace>
+    <AssemblyName>DXqlvt</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DXItem5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXItem5.Designer.cs">
+      <DependentUpon>DXItem5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DXTableManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DXTableManager.Designer.cs">
+      <DependentUpon>DXTableManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChucvu.Designer.cs">
+      <DependentUpon>fChucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInddi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInddi.Designer.cs">
+      <DependentUpon>fInddi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fIndi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fIndi.Designer.cs">
+      <DependentUpon>fIndi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInnb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInnb.Designer.cs">
+      <DependentUpon>fInnb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInnd.Designer.cs">
+      <DependentUpon>fInnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoaivanban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoaivanban.Designer.cs">
+      <DependentUpon>fLoaivanban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNoibanhanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNoibanhanh.Designer.cs">
+      <DependentUpon>fNoibanhanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProfileManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProfileManager.Designer.cs">
+      <DependentUpon>fProfileManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuanlynguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuanlynguoidung.Designer.cs">
+      <DependentUpon>fQuanlynguoidung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTimkiemvanbanden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTimkiemvanbanden.Designer.cs">
+      <DependentUpon>fTimkiemvanbanden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ftimkiemvbden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ftimkiemvbden.Designer.cs">
+      <DependentUpon>ftimkiemvbden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ftimkiemvbdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ftimkiemvbdi.Designer.cs">
+      <DependentUpon>ftimkiemvbdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUser.Designer.cs">
+      <DependentUpon>fUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVanbanden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVanbanden.Designer.cs">
+      <DependentUpon>fVanbanden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVanbandi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVanbandi.Designer.cs">
+      <DependentUpon>fVanbandi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVanbannoibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVanbannoibo.Designer.cs">
+      <DependentUpon>fVanbannoibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXuly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXuly.Designer.cs">
+      <DependentUpon>fXuly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLVTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLVTDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLVTDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinnoibanhanh.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thongtinnoibanhanh.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinvanbanden.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thongtinvanbanden.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinvanbandi.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thongtinvanbandi.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinvanbannoibo.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Thongtinvanbannoibo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Timkiemdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timkiemdi.Designer.cs">
+      <DependentUpon>Timkiemdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timkiemvbnb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timkiemvbnb.Designer.cs">
+      <DependentUpon>Timkiemvbnb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm2.Designer.cs">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm3.Designer.cs">
+      <DependentUpon>XtraForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm4.Designer.cs">
+      <DependentUpon>XtraForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm5.Designer.cs">
+      <DependentUpon>XtraForm5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm6.Designer.cs">
+      <DependentUpon>XtraForm6.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DXItem5.resx">
+      <DependentUpon>DXItem5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DXTableManager.resx">
+      <DependentUpon>DXTableManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChucvu.resx">
+      <DependentUpon>fChucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInddi.resx">
+      <DependentUpon>fInddi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fIndi.resx">
+      <DependentUpon>fIndi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInnb.resx">
+      <DependentUpon>fInnb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInnd.rdlc" />
+    <EmbeddedResource Include="fInnd.resx">
+      <DependentUpon>fInnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoaivanban.resx">
+      <DependentUpon>fLoaivanban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNoibanhanh.resx">
+      <DependentUpon>fNoibanhanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProfileManager.resx">
+      <DependentUpon>fProfileManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuanlynguoidung.resx">
+      <DependentUpon>fQuanlynguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTimkiemvanbanden.resx">
+      <DependentUpon>fTimkiemvanbanden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ftimkiemvbden.resx">
+      <DependentUpon>ftimkiemvbden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ftimkiemvbdi.resx">
+      <DependentUpon>ftimkiemvbdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUser.resx">
+      <DependentUpon>fUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVanbanden.resx">
+      <DependentUpon>fVanbanden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVanbandi.resx">
+      <DependentUpon>fVanbandi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVanbannoibo.resx">
+      <DependentUpon>fVanbannoibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXuly.resx">
+      <DependentUpon>fXuly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invanbanden.rdlc" />
+    <EmbeddedResource Include="invanbandi.rdlc" />
+    <EmbeddedResource Include="invbnb.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportVBNB.rdlc" />
+    <EmbeddedResource Include="Timkiemdi.resx">
+      <DependentUpon>Timkiemdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timkiemvbnb.resx">
+      <DependentUpon>Timkiemvbnb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm4.resx">
+      <DependentUpon>XtraForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm5.resx">
+      <DependentUpon>XtraForm5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm6.resx">
+      <DependentUpon>XtraForm6.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="QLVTDataSet10.xsc">
+      <DependentUpon>QLVTDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet10.xss">
+      <DependentUpon>QLVTDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet11.xsc">
+      <DependentUpon>QLVTDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet11.xss">
+      <DependentUpon>QLVTDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet5.xsc">
+      <DependentUpon>QLVTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet5.xss">
+      <DependentUpon>QLVTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet61.xsc">
+      <DependentUpon>QLVTDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet61.xss">
+      <DependentUpon>QLVTDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet7.xsc">
+      <DependentUpon>QLVTDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet7.xss">
+      <DependentUpon>QLVTDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet8.xsc">
+      <DependentUpon>QLVTDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet8.xss">
+      <DependentUpon>QLVTDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet9.xsc">
+      <DependentUpon>QLVTDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet9.xss">
+      <DependentUpon>QLVTDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Thongtinnoibanhanh.dbml.layout">
+      <DependentUpon>Thongtinnoibanhanh.dbml</DependentUpon>
+    </None>
+    <None Include="Thongtinvanbanden.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thongtinvanbanden.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thongtinvanbandi.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thongtinvanbandi.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thongtinvanbannoibo.dbml.layout">
+      <DependentUpon>Thongtinvanbannoibo.dbml</DependentUpon>
+    </None>
+    <None Include="Thongtinvanbandi.dbml.layout">
+      <DependentUpon>Thongtinvanbandi.dbml</DependentUpon>
+    </None>
+    <None Include="Thongtinvanbanden.dbml.layout">
+      <DependentUpon>Thongtinvanbanden.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="ReportVanbanden.rdlc" />
+    <EmbeddedResource Include="timkiemvbdi.rdlc" />
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm2.resx">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm3.resx">
+      <DependentUpon>XtraForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLVTDataSet.xsc">
+      <DependentUpon>QLVTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet.xss">
+      <DependentUpon>QLVTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet1.xsc">
+      <DependentUpon>QLVTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet1.xss">
+      <DependentUpon>QLVTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet2.xsc">
+      <DependentUpon>QLVTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet2.xss">
+      <DependentUpon>QLVTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet3.xsc">
+      <DependentUpon>QLVTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet3.xss">
+      <DependentUpon>QLVTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet4.xsc">
+      <DependentUpon>QLVTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLVTDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLVTDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLVTDataSet4.xss">
+      <DependentUpon>QLVTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Thongtinnoibanhanh.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thongtinnoibanhanh.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Thongtinvanbannoibo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Thongtinvanbannoibo.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
